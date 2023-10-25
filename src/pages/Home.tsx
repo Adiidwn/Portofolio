@@ -10,11 +10,12 @@ import {
   Text,
   Tooltip,
   useClipboard,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import photo1 from "../assets/photos/photo1.jpg";
+import adiCV from "../assets/photos/adiCV.pdf";
 export function Home() {
   const { hasCopied, onCopy } = useClipboard("example@example.com");
   return (
@@ -67,19 +68,25 @@ export function Home() {
                 label={hasCopied ? "Cv Copied!" : "Copy Cv"}
                 closeOnClick={false}
                 hasArrow>
-                <Button
-                  aria-label="Cv"
-                  variant="ghost"
-                  size="lg"
-                  mt={4}
-                  fontSize="2xl"
-                  _hover={{
-                    bg: "blue.500",
-                    color: useColorModeValue("white", "gray.700"),
-                  }}
-                  onClick={onCopy}>
-                  Checkout my CV
-                </Button>
+                <a
+                  href={adiCV}
+                  download="Adiwidiawan-CV-PDF"
+                  target="_blank"
+                  rel="noreferrer">
+                  <Button
+                    aria-label="Cv"
+                    variant="ghost"
+                    size="lg"
+                    mt={4}
+                    fontSize="2xl"
+                    _hover={{
+                      bg: "blue.500",
+                      color: useColorModeValue("white", "gray.700"),
+                    }}
+                    onClick={onCopy}>
+                    Checkout my CV
+                  </Button>
+                </a>
               </Tooltip>
             </Stack>
 
@@ -138,18 +145,20 @@ export function Home() {
                   />
                 </Box>
 
-                <Box as="a" href="#">
-                  <IconButton
-                    aria-label="linkedin"
-                    variant="ghost"
-                    size="lg"
-                    icon={<BsLinkedin size="28px" />}
-                    _hover={{
-                      bg: "blue.500",
-                      color: useColorModeValue("white", "gray.700"),
-                    }}
-                    isRound
-                  />
+                <Box as="a">
+                  <a href="https://linkedin.com/in/adiwidiawan">
+                    <IconButton
+                      aria-label="linkedin"
+                      variant="ghost"
+                      size="lg"
+                      icon={<BsLinkedin size="28px" />}
+                      _hover={{
+                        bg: "blue.500",
+                        color: useColorModeValue("white", "gray.700"),
+                      }}
+                      isRound
+                    />
+                  </a>
                 </Box>
               </Stack>
             </Stack>

@@ -39,12 +39,12 @@ export default function Navbar() {
   const {  onOpen  } = useDisclosure()
   return (
     <>
-      <Box color={useColorModeValue('gray.700', 'gray.400')} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box position="sticky" top="0" color={useColorModeValue('gray.700', 'gray.400')} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} marginLeft={'200px'} alignItems={'center'} justifyContent={'space-between'}>
           <Box fontSize={'2xl'} fontFamily={'mono'}>Adiwidiawan.</Box>
 
           <Box gap={1} display={{ base: 'none', md: 'flex' }}>
-            <Button onClick={onOpen}>
+            <Button onClick={onOpen}> 
             Home
             </Button>
             <Button onClick={onOpen}>
