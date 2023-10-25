@@ -11,13 +11,12 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Text,
   Stack,
   Textarea,
   Tooltip,
-  useClipboard,
-  useColorModeValue,
   VStack,
+  useClipboard,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs'
 import { MdEmail, MdOutlineEmail } from 'react-icons/md'
