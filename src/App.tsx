@@ -11,9 +11,7 @@ function App() {
       <Home />
       <Carousel />
       <Box>
-        <br></br>
-        <br></br>
-        <br></br>
+          
       </Box>
       <Footer />
     </Box>

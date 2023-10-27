@@ -116,19 +116,21 @@ export function Home() {
                   />
                 </Tooltip>
 
-                <Box as="a" href="#">
-                  <IconButton
-                    aria-label="github"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    icon={<BsGithub />}
-                    _hover={{
-                      bg: "blue.500",
-                      color: useColorModeValue("white", "gray.700"),
-                    }}
-                    isRound
-                  />
+                <Box as="a" >
+                  <a href="https://github.com/Adiidwn">
+                    <IconButton
+                      aria-label="github"
+                      variant="ghost"
+                      size="lg"
+                      fontSize="3xl"
+                      icon={<BsGithub />}
+                      _hover={{
+                        bg: "blue.500",
+                        color: useColorModeValue("white", "gray.700"),
+                      }}
+                      isRound
+                    />
+                  </a>
                 </Box>
 
                 <Box as="a" href="#">
