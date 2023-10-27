@@ -25,6 +25,9 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
+import noesakanImage from "../assets/photos/noesakan.png"
+import lakoeImage from "../assets/photos/lakoe.png"
+import zImage from "../assets/photos/z.png"
 
 export default function Carousel() {
   // As we have used custom buttons, we need a reference variable to
@@ -43,21 +46,21 @@ export default function Carousel() {
       id: 1,
       title: "Noesakan.Id",
       text: "(Noesantara Ikan)This is E-Commerce with Threads website, So we can find product(Noesantara fish) also request product it self  .",
-      image: "../src/assets/photos/noesakan.png",
+      image: noesakanImage,
       link: "https://noesakan.vercel.app/",
     },
     {
       id: 2,
       title: "Lakoe.Id",
       text: "This is E-Commerce website for helping UMKM(Small and Medium Enterprise) for promote and selling their Product .",
-      image: "../src/assets/photos/lakoe.png",
+      image: lakoeImage,
       link: "https://staging.lakoe.store/",
     },
     {
       id: 3,
       title: "Z.Id",
       text: "This is website Threads social media (clone X) we can share / post threads or images and interact with people.",
-      image: "../src/assets/photos/z.png",
+      image: zImage,
       link: "https://github.com/Adiidwn/nuaing/tree/dev",
     },
   ];
@@ -118,7 +121,7 @@ export default function Carousel() {
                   backgroundRepeat="no-repeat"
                   backgroundSize="crop"
                   objectFit={"cover"}
-                  backgroundImage={`url(${card.image})`}>
+                  backgroundImage={card.image}>
 
                   {/* This is the block you need to change, to customize the caption */}
                   <Container
